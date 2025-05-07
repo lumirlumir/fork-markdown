@@ -1,5 +1,71 @@
 # Changelog
 
+## [7.0.0](https://github.com/lumirlumir/fork-markdown/compare/v6.4.0...v7.0.0) (2025-05-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* Rename to @eslint/markdown ([#265](https://github.com/lumirlumir/fork-markdown/issues/265))
+* Convert to ESM ([#259](https://github.com/lumirlumir/fork-markdown/issues/259))
+* map known code block languages to respective file extensions ([#246](https://github.com/lumirlumir/fork-markdown/issues/246))
+* drop eslint < 8 & Node.js < 18 ([#238](https://github.com/lumirlumir/fork-markdown/issues/238))
+* Switch to flat config ([#232](https://github.com/lumirlumir/fork-markdown/issues/232))
+* drop node v8 and v10 ([#203](https://github.com/lumirlumir/fork-markdown/issues/203))
+
+### Features
+
+* add `meta` property ([#233](https://github.com/lumirlumir/fork-markdown/issues/233)) ([eedda96](https://github.com/lumirlumir/fork-markdown/commit/eedda967069a665b800fcf95b985424e50c77df6))
+* Add disable comment support ([#281](https://github.com/lumirlumir/fork-markdown/issues/281)) ([acdbd08](https://github.com/lumirlumir/fork-markdown/commit/acdbd08102a60d9521cb9c2c29917cf4b0a27e14))
+* Add Markdown languages ([#268](https://github.com/lumirlumir/fork-markdown/issues/268)) ([d79c42b](https://github.com/lumirlumir/fork-markdown/commit/d79c42bcb1a8f495b21733c25c8b70e881a7ebf9))
+* add missing `mdast` types to `MarkdownRuleVisitor` ([#334](https://github.com/lumirlumir/fork-markdown/issues/334)) ([fc8ba03](https://github.com/lumirlumir/fork-markdown/commit/fc8ba0314696c2f22233a9870360e2e9a5799ccc))
+* add name to flat configs ([#256](https://github.com/lumirlumir/fork-markdown/issues/256)) ([001d51e](https://github.com/lumirlumir/fork-markdown/commit/001d51e9a66bea80f0c971f05a9cf4e1126dfaa8))
+* Add type checking and type definitions ([#266](https://github.com/lumirlumir/fork-markdown/issues/266)) ([0503748](https://github.com/lumirlumir/fork-markdown/commit/0503748497e623842b8c78b140b766a086ee2ce7))
+* allow specifying filename in block meta ([#318](https://github.com/lumirlumir/fork-markdown/issues/318)) ([7075f00](https://github.com/lumirlumir/fork-markdown/commit/7075f009d435e6d940deefe903ba9848964e001c))
+* Convert to ESM ([#259](https://github.com/lumirlumir/fork-markdown/issues/259)) ([e0da221](https://github.com/lumirlumir/fork-markdown/commit/e0da2214cc06fd441def1844135f3c9fef74e940))
+* create `no-empty-images` ([#357](https://github.com/lumirlumir/fork-markdown/issues/357)) ([23e4ff0](https://github.com/lumirlumir/fork-markdown/commit/23e4ff0d7be9e10ce017357cb5f8e15276c6c404))
+* Create type definitions for rules ([#324](https://github.com/lumirlumir/fork-markdown/issues/324)) ([5f11a3d](https://github.com/lumirlumir/fork-markdown/commit/5f11a3d071103f4103310fc6916508eb7cb76def))
+* drop eslint &lt; 8 & Node.js &lt; 18 ([#238](https://github.com/lumirlumir/fork-markdown/issues/238)) ([f14f6a5](https://github.com/lumirlumir/fork-markdown/commit/f14f6a58ffe65cee8c31beb6d8ff8bcc1ae81383))
+* drop node v8 and v10 ([#203](https://github.com/lumirlumir/fork-markdown/issues/203)) ([071fa66](https://github.com/lumirlumir/fork-markdown/commit/071fa661875e4bd88a91dcd39eee9276bf3f2b0a))
+* export `MarkdownRuleDefinition` type ([#333](https://github.com/lumirlumir/fork-markdown/issues/333)) ([13dfd5e](https://github.com/lumirlumir/fork-markdown/commit/13dfd5ec279d1db3cbd1ef2b6bf5d00799371090))
+* JSR package ([#271](https://github.com/lumirlumir/fork-markdown/issues/271)) ([7040a2e](https://github.com/lumirlumir/fork-markdown/commit/7040a2e3b9b4e1a49cf4b86dbe1ce6c52535d55e))
+* map known code block languages to respective file extensions ([#246](https://github.com/lumirlumir/fork-markdown/issues/246)) ([096cff4](https://github.com/lumirlumir/fork-markdown/commit/096cff4094dc9118a3538980ee56bfb8c5cb03d4))
+* Rename to @eslint/markdown ([#265](https://github.com/lumirlumir/fork-markdown/issues/265)) ([e0b5457](https://github.com/lumirlumir/fork-markdown/commit/e0b545708c051e605b438f9cddde8dad3ec24c6e))
+* support `eslint` config comments ([#332](https://github.com/lumirlumir/fork-markdown/issues/332)) ([f697540](https://github.com/lumirlumir/fork-markdown/commit/f6975405df4899002053988b2771066a3f2426bc))
+* support front matter ([#328](https://github.com/lumirlumir/fork-markdown/issues/328)) ([35a979c](https://github.com/lumirlumir/fork-markdown/commit/35a979c16a0762024ba7150439a7628f56b76a51))
+* Switch to flat config ([#232](https://github.com/lumirlumir/fork-markdown/issues/232)) ([7a27eef](https://github.com/lumirlumir/fork-markdown/commit/7a27eef394dbc06f24b16d926946d60accb2d4c7))
+
+
+### Bug Fixes
+
+* `message.line` could be `undefined` ([#191](https://github.com/lumirlumir/fork-markdown/issues/191)) ([3a40160](https://github.com/lumirlumir/fork-markdown/commit/3a401606cb2ac4dae6b95720799ed1c611af32d0))
+* `no-missing-label-refs` rule does not respect escaping ([#348](https://github.com/lumirlumir/fork-markdown/issues/348)) ([cb6b437](https://github.com/lumirlumir/fork-markdown/commit/cb6b4376e94f2f89a100352d01857ad08deff652))
+* `overrides` general docs and Atom linter-eslint tips (fixes [#109](https://github.com/lumirlumir/fork-markdown/issues/109)) ([#111](https://github.com/lumirlumir/fork-markdown/issues/111)) ([2a8482e](https://github.com/lumirlumir/fork-markdown/commit/2a8482e8e39da2ab4a1d8aeb7459f26a8377905d))
+* Account for BOM in the processor ([#282](https://github.com/lumirlumir/fork-markdown/issues/282)) ([01bceae](https://github.com/lumirlumir/fork-markdown/commit/01bceae60fd229fbbaddf6bddffb9ec3933e8605))
+* add type tests ([#305](https://github.com/lumirlumir/fork-markdown/issues/305)) ([ea60127](https://github.com/lumirlumir/fork-markdown/commit/ea60127142ea335fe2ea7d70205ce6208df26bbc))
+* Add unicode-bom to unsatisfiable rules (refs [#75](https://github.com/lumirlumir/fork-markdown/issues/75)) ([#84](https://github.com/lumirlumir/fork-markdown/issues/84)) ([e34acc6](https://github.com/lumirlumir/fork-markdown/commit/e34acc60c2867889ba4d16a2deecc2cbd03e351b))
+* adjust suggestion fix ranges in processor ([#309](https://github.com/lumirlumir/fork-markdown/issues/309)) ([f164e66](https://github.com/lumirlumir/fork-markdown/commit/f164e66016821f2d35a22851552d43f0c0c33a73))
+* Allowing eslint-plugin-prettier to work (fixes [#101](https://github.com/lumirlumir/fork-markdown/issues/101)) ([#107](https://github.com/lumirlumir/fork-markdown/issues/107)) ([a2f4492](https://github.com/lumirlumir/fork-markdown/commit/a2f44927bda799a699bea3fbee0bfb8f6dd8ce14))
+* Apply base indent to multiple line breaks (fixes [#127](https://github.com/lumirlumir/fork-markdown/issues/127)) ([#128](https://github.com/lumirlumir/fork-markdown/issues/128)) ([5640ea6](https://github.com/lumirlumir/fork-markdown/commit/5640ea65730abab5c9c97d77b5708f3499ec62f3))
+* check upper bounds of message line numbers for code blocks ([#247](https://github.com/lumirlumir/fork-markdown/issues/247)) ([00adccb](https://github.com/lumirlumir/fork-markdown/commit/00adccb49ed74e6b6ce43bc221a93d7c6782a83c))
+* correct `exports` field in package.json ([#279](https://github.com/lumirlumir/fork-markdown/issues/279)) ([8e40d30](https://github.com/lumirlumir/fork-markdown/commit/8e40d308dba0fdcb445cbebf56a161db16bf5806))
+* Don't require message end locations (fixes [#112](https://github.com/lumirlumir/fork-markdown/issues/112)) ([#154](https://github.com/lumirlumir/fork-markdown/issues/154)) ([0311640](https://github.com/lumirlumir/fork-markdown/commit/03116401ae7be0c86b5a48d22aacd94df387a5df))
+* Emit correct endLine numbers ([#88](https://github.com/lumirlumir/fork-markdown/issues/88)) ([dff8e9c](https://github.com/lumirlumir/fork-markdown/commit/dff8e9c7f334af8a68a6c8a3671ffc01c3bdafbb))
+* enhance fenced code language rule to support tilde as a delimiter ([#344](https://github.com/lumirlumir/fork-markdown/issues/344)) ([852645e](https://github.com/lumirlumir/fork-markdown/commit/852645ee070c5c85a45c740a0925fb70768cc840))
+* Exclude eol-last from output (fixes [#48](https://github.com/lumirlumir/fork-markdown/issues/48)) ([abab043](https://github.com/lumirlumir/fork-markdown/commit/abab043f054e0b7f838615875b579c81d6aa288b))
+* Ignore anything after space in code fence's language (fixes [#98](https://github.com/lumirlumir/fork-markdown/issues/98)) ([#99](https://github.com/lumirlumir/fork-markdown/issues/99)) ([a5d0cce](https://github.com/lumirlumir/fork-markdown/commit/a5d0ccec6f14f4808a535c0f06273d1e9892be15))
+* Ignore words in info string after syntax (fixes [#166](https://github.com/lumirlumir/fork-markdown/issues/166)) ([#167](https://github.com/lumirlumir/fork-markdown/issues/167)) ([23ac2b9](https://github.com/lumirlumir/fork-markdown/commit/23ac2b95b1c2666baf422c24f5b73607d315a700))
+* Indent multiline fixes (fixes [#120](https://github.com/lumirlumir/fork-markdown/issues/120)) ([#124](https://github.com/lumirlumir/fork-markdown/issues/124)) ([fb0b5a3](https://github.com/lumirlumir/fork-markdown/commit/fb0b5a3fc36ad362556cafc49929f49e3b4bc6b0))
+* More reliable comment attachment (fixes [#76](https://github.com/lumirlumir/fork-markdown/issues/76)) ([#177](https://github.com/lumirlumir/fork-markdown/issues/177)) ([79be776](https://github.com/lumirlumir/fork-markdown/commit/79be776331cf2bb4db2f265ee6cf7260e90e3d5e))
+* no-missing-label-refs should not crash on undefined labels ([#290](https://github.com/lumirlumir/fork-markdown/issues/290)) ([ac1bc1c](https://github.com/lumirlumir/fork-markdown/commit/ac1bc1c2615184128ecad07e44079213b4ecc7da))
+* npm prepare script on Windows (refs [#166](https://github.com/lumirlumir/fork-markdown/issues/166)) ([#168](https://github.com/lumirlumir/fork-markdown/issues/168)) ([1dd7089](https://github.com/lumirlumir/fork-markdown/commit/1dd70890b92827a5fbd3a86a62c3f2bc30389340))
+* overrides pattern for virtual filenames in recommended config ([#169](https://github.com/lumirlumir/fork-markdown/issues/169)) ([f6a3fad](https://github.com/lumirlumir/fork-markdown/commit/f6a3fada43aaeb613aaf9168dfd06a53b9db0ab4))
+* Remove peer dependency ([#284](https://github.com/lumirlumir/fork-markdown/issues/284)) ([2cf3c6b](https://github.com/lumirlumir/fork-markdown/commit/2cf3c6bb7a3572e868bbb271c56763cb0bc9172f))
+* replace `IMarkdownSourceCode` with `MarkdownSourceCode` ([#336](https://github.com/lumirlumir/fork-markdown/issues/336)) ([ec2846b](https://github.com/lumirlumir/fork-markdown/commit/ec2846be8d0e0a3c216ea471eda62a1ce1a990a7))
+* Support autofix at the very start of blocks (fixes [#117](https://github.com/lumirlumir/fork-markdown/issues/117)) ([#119](https://github.com/lumirlumir/fork-markdown/issues/119)) ([dc90961](https://github.com/lumirlumir/fork-markdown/commit/dc909618aa8f39e84279f5bdeb4a888d56d919b1))
+* Support globals (fixes [#79](https://github.com/lumirlumir/fork-markdown/issues/79)) ([#81](https://github.com/lumirlumir/fork-markdown/issues/81)) ([7c19f8b](https://github.com/lumirlumir/fork-markdown/commit/7c19f8bdd5db610ea4c65208f5a37fea684a8d7b))
+* Update markdown-language.js ([#314](https://github.com/lumirlumir/fork-markdown/issues/314)) ([10e8535](https://github.com/lumirlumir/fork-markdown/commit/10e8535f4f58b2d08581505d6a6c1600d941cf96))
+* use blocksCache instead of single blocks instance (fixes [#181](https://github.com/lumirlumir/fork-markdown/issues/181)) ([#183](https://github.com/lumirlumir/fork-markdown/issues/183)) ([d23d5f7](https://github.com/lumirlumir/fork-markdown/commit/d23d5f739943d136669aac945ef25528f31cd7db))
+
 ## [6.4.0](https://github.com/eslint/markdown/compare/v6.3.0...v6.4.0) (2025-04-17)
 
 
